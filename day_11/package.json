@@ -1,0 +1,12 @@
+{
+    "name": "calculate-bonuses",
+    "version": "1.0.0",
+    "main": "excelop.js",
+    "scripts": {
+      "start": "node calculateBonuses.js"
+    },
+    "dependencies": {
+      "exceljs": "^4.2.0"
+    }
+  }
+  

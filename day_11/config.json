@@ -1,0 +1,7 @@
+{
+    "lowerLimit": 50000,
+    "upperLimit": 100000,
+    "lowerBonus": 0.05,
+    "upperBonus": 0.1
+  }
+  

@@ -9,13 +9,12 @@ const path = require('path');
 const filePaths = [
   path.resolve(__dirname, 'f1.txt'),
   path.resolve(__dirname, 'f2.txt'),
-  path.resolve(__dirname, 'f3.txt'),
+  path.resolve(__dirname, 'f3.txt')
 ];
 
-  const filePath = filePaths[0];
-  
+const filePath = filePaths[0];
+
 const contentWrite = "I'am writting to this file by 'writeFileAsync function'  " ;
-  
    // Provide an array of file paths to processFiles
    async function pross(filePaths) {
     try{

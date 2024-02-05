@@ -1,5 +1,4 @@
 
-const fs = require('fs/promises'); 
 const readFileAsync = require('./readFileAsync');
 const writeFileAsync = require('./writeFileAsync');
 
@@ -19,7 +18,7 @@ function processFiles(filePaths) {
             .join('')
             .toUpperCase();
   
-          const modifiedFilePath = filePath.replace('.txt', '_modified.txt');
+          const modifiedFilePath =  'fil21'
   
           return writeFileAsync(modifiedFilePath, modifiedContent)
             .then(() => {

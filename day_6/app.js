@@ -38,6 +38,7 @@ function writeFileAsync(filePath, content) {
 
 
 function processFiles(filePaths) {
+  [f1,f2,f3]
   const promises = filePaths.map(filePath => {
     // Read the file content
     return readFileAsync(filePath)
