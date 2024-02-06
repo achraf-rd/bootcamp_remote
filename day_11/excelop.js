@@ -1,7 +1,8 @@
 const ExcelJS = require('exceljs');
 const fs = require('fs')
 // Function to calculate bonus based on annual salary
-
+const readFileAsync = require('../day_6/readFileAsync');
+let re ;
 function calculateBonus(annualSalary, lowerLimit, upperLimit, lowerBonus, upperBonus){
     if (annualSalary < lowerLimit) {
         return { percentage: lowerBonus, amount: annualSalary * lowerBonus };
@@ -12,7 +13,13 @@ function calculateBonus(annualSalary, lowerLimit, upperLimit, lowerBonus, upperB
     }
 }
 
-
+async function read(filePath) {
+    try{
+        re = await readFileAsync(filePath);
+      }catch(error){
+        console.error(`Error processing files: ${error.message}`);
+      } 
+   }
 async function processExcelFile(inputFilePath, outputFilePath,config){
     try {
         // Create a new workbook
@@ -69,11 +76,15 @@ if (!inputFilePath || !outputFilePath) {  //the config file is optional!
         lowerBonus: 0.05,
         upperBonus: 0.07,
     };
-    // A ternary to Load bonus calculation configuration from command-line arguments or a configuration file
-    const config = configFilePath ? JSON.parse(fs.readFileSync(configFilePath, 'utf8')) : defaultConfig;
-    console.log(config);
-    // Execute the script
-    processExcelFile(inputFilePath, outputFilePath, config);
+    read(configFilePath).then(()=>{
+        console.log(re);
+        // A ternary to Load bonus calculation configuration from command-line arguments or a configuration file
+        const config = configFilePath ? JSON.parse(re) : defaultConfig;
+        console.log(config);
+        // Execute the script
+        processExcelFile(inputFilePath, outputFilePath, config);
+    })
+   
  
 }
 
