@@ -25,7 +25,7 @@ class ContactList extends EventEmitter {
       console.log(`${index + 1}. ${contact.name} - ${contact.phone}`);
     });
   }
-  // arrow function to 
+  // arrow function to avoid this binding problem 
   searchfor(target) {
     let foundes = this.contacts.filter((e)=> e.name.toLowerCase().trim() === target.toLowerCase().trim())
     if(foundes.length>0){
