@@ -1,0 +1,1 @@
+temperature in New York: 3.1 
