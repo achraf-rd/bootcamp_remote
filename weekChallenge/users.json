@@ -1,0 +1,83 @@
+[
+  {
+    "accountID": "ACC1001",
+    "name": "John Doe",
+    "pin": "1234",
+    "balance": 2000,
+    "transactions": [
+      {
+        "type": "deposit",
+        "amount": 500,
+        "date": "2024-02-01"
+      },
+      {
+        "type": "withdraw",
+        "amount": 200,
+        "date": "2024-02-02"
+      },
+      {
+        "type": "deposit",
+        "amount": 500,
+        "date": "2024-02-05"
+      }
+    ]
+  },
+  {
+    "accountID": "ACC1002",
+    "name": "Jane Smith",
+    "pin": "4321",
+    "balance": 1800,
+    "transactions": [
+      {
+        "type": "deposit",
+        "amount": 1000,
+        "date": "2024-02-03"
+      },
+      {
+        "type": "withdraw",
+        "amount": 300,
+        "date": "2024-02-04"
+      },
+      {
+        "type": "withdraw",
+        "amount": 400,
+        "date": "2024-02-06"
+      }
+    ]
+  },
+  {
+    "accountID": "ACC8949",
+    "name": "Alice",
+    "pin": 7090,
+    "balance": 0,
+    "transactions": []
+  },
+  {
+    "accountID": "ACC5951",
+    "name": "Alice",
+    "pin": 4307,
+    "balance": 0,
+    "transactions": []
+  },
+  {
+    "accountID": "ACC7330",
+    "name": "Alice",
+    "pin": 4642,
+    "balance": 0,
+    "transactions": []
+  },
+  {
+    "accountID": "ACC5538",
+    "name": "Alice",
+    "pin": 8062,
+    "balance": 0,
+    "transactions": []
+  },
+  {
+    "accountID": "ACC1391",
+    "name": "Alice",
+    "pin": 7478,
+    "balance": 0,
+    "transactions": []
+  }
+]

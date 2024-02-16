@@ -33,10 +33,11 @@ async function fetchtemp(city){
       }
 }
 
-let city = selectRandomCity(cities);
-fetchtemp(city).then((temp) =>{
-    console.log(`temperature in ${city.name}: ${temp} `);
-});
+// let city = selectRandomCity(cities);
+// fetchtemp(city).then((temp) =>{
+//     console.log(`temperature in ${city.name}: ${temp} `);
+// });
 
+module.exports = fetchtemp;
 
 

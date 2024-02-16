@@ -1,5 +1,5 @@
 //const fs = require('fs');
-const writeFileAsync = require('../day_6/writeFileAsync');
+const writeFileAsync = require('../../day_6/writeFileAsync');
 const csvtojson = require('csvtojson');
 
 const csvFilePath = 'worldcities.csv';  
