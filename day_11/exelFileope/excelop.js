@@ -1,7 +1,7 @@
 const ExcelJS = require('exceljs');
 const fs = require('fs')
 // Function to calculate bonus based on annual salary
-const readFileAsync = require('../day_6/readFileAsync');
+const readFileAsync = require('../../day_6/readFileAsync');
 let re ;
 function calculateBonus(annualSalary, lowerLimit, upperLimit, lowerBonus, upperBonus){
     if (annualSalary < lowerLimit) {
