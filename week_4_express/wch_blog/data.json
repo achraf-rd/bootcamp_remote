@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Getting Started with React",
+        "author": "John Doe",
+        "content": "React is a popular JavaScript library for building user interfaces. In this blog post, we will learn how to get started with React and build a simple application.",
+        "date": "2022-01-01"
+    },
+  {
+    "id": 2,
+    "title": "Introduction to RESTful APIs",
+    "author": "Jane Smith",
+    "content": "RESTful APIs are a key component of modern web development. In this blog post, we will learn about the principles of REST and how to design and implement RESTful APIs.",
+    "date": "2022-01-05"
+  },
+    {
+        "id": 3,
+        "title": "Building a Full-Stack Application with React and Node.js",
+        "author": "John Doe",
+        "content": "In this blog post, we will learn how to build a full-stack application using React for the front-end and Node.js for the back-end. We will cover topics such as routing, data fetching, and authentication.",
+        "date": "2022-01-10"
+    }   
+]

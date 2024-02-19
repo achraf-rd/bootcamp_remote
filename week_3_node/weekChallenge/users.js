@@ -94,7 +94,7 @@ class UserDataStorage {
     const existingPins = usersData.map(user => user.pin);
 
     const newID = this.generateUniqueID(existingIDs);
-    const newPin VC= this.generateUniquePin(existingPins);
+    const newPin = this.generateUniquePin(existingPins);
 
     const newUser = new User(newID, name, newPin);
     usersData.push(newUser);
@@ -105,26 +105,24 @@ class UserDataStorage {
 
   async authenticateUser() {
     const usersData = await this.readUserData();
-
+   
     const accountID = await prompt('Enter your accountID: ');
-    const pin = await prompt('Enter your pin: ', true);
-
+    const pin = await prompt('Enter your pin: ');
+    console.log(usersData);
     const authenticatedUser = usersData.find(user => user.accountID === accountID && user.pin === pin);
-
+    console.log(authenticatedUser);
     if (authenticatedUser) {
       console.log(`Welcome, ${authenticatedUser.name}!`);
     } else {
       console.error('Invalid credentials. Authentication failed.');
     }
-    rl.close();
   }
-  
 }
 
 
 
 async function main() {
-  const usersFilePath = path.join(__dirname, 'users.json');
+  const usersFilePath =  'users.json';
   const userDataStorage = new UserDataStorage(usersFilePath);
 
   // Example: Add a new user
