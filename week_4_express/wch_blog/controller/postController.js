@@ -1,5 +1,4 @@
 
-const fsp = require('fs/promises');
 const postmodel = require('../models/post');
 
 const getPosts =  async (req, res) => {
@@ -8,10 +7,9 @@ const getPosts =  async (req, res) => {
 };
 
 const createPost = async (req, res) => {
-    let data;
+    let data ;
     if (!req.body.title || !req.body.content) {
-        res.status(400).json({error: 'title and content are required'});
-        
+        res.status(400).json({error: 'title and content are required'});   
     }
 
     try{

@@ -2,7 +2,7 @@
 const fsp = require('fs/promises');
 
 const getJsonData = async () => { 
-    let data = await fsp.readFile('./data.json', 'utf8', (err) => {
+   fsp.readFile('./data.json', 'utf8', (err,data) => {
     if (err) {
         console.log(err);
         throw err.message;
