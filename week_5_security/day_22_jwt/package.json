@@ -1,0 +1,11 @@
+{
+  "name": "day_22_jwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "start": "nodemon test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

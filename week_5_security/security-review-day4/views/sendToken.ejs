@@ -1,0 +1,21 @@
+<script> 
+window.onload = () => {
+  const token = '<%= token %>'; // Replace '<%= token %>' with the actual token value from the render method
+  fetch('/dashboard',{
+    headers: {
+      authorization: 'bearer ' + token
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      window.location.href = '/dashboard';
+    } else {
+      console.error('Failed to redirect to /dashboard');
+    }
+  })
+  .catch(error => {
+    console.error('Failed to fetch /dashboard:', error);
+  });
+}
+</script>
+
