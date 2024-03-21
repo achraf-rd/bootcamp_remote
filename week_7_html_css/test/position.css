@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    height: 2000px; /* Added height to demonstrate scrolling */
+}
+
+.static-example, .relative-example, .absolute-example, .fixed-example, .sticky-example {
+    padding: 10px;
+    margin: 10px 0;
+    color: white;
+}
+
+.static-example {
+    background-color: grey;
+}
+
+.relative-example {
+    position: relative;
+    left: 20px; /* Shifted 20px to the right */
+    background-color: blue;
+}
+
+.absolute-example {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    background-color: green;
+}
+
+.fixed-example {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+}
+
+.sticky-example {
+    position: sticky;
+    top: 0;
+    background-color: orange;
+}
+
+.content {
+    margin-top: 50px;
+}

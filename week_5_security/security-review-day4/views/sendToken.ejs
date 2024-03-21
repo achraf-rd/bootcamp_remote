@@ -1,6 +1,6 @@
 <script> 
 window.onload = () => {
-  const token = '<%= token %>'; // Replace '<%= token %>' with the actual token value from the render method
+  const token = '<%= token %>'; 
   fetch('/dashboard',{
     headers: {
       authorization: 'bearer ' + token

@@ -1,0 +1,33 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-color: #f0f0f0; /* Light background for the container */
+  }
+  
+  .hero-image {
+    flex: 2; /* Take up half of the container */
+    background-image: url("1.jpeg");
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the background image */
+  }
+  
+  .hero-content {
+    flex: 1; /* Take up the remaining half */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  }
+  
+  .hero-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero-description {
+    font-size:  1.5em;
+    text-align: center; /* Center-align the description text */
+  }
