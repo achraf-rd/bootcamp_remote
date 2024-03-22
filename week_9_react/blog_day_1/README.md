@@ -1,1 +1,1 @@
-![Alt Text](data:image/png;base64,<base64-encoded-image-data>)
+![alt text](image-1.png)
