@@ -1,4 +1,3 @@
-const vscode = require('vscode');
 
 // Filtering:
 Model.find({ field: 'value' });
