@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-
+week_7_html_css
 week_9_react
 # Editor directories and files
 .vscode/*
